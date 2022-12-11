@@ -5,7 +5,7 @@
     "extension_author": "EspressoCake",
     "original_author": "EspressoCake",
     "repo_url": "https://github.com/NightlyEscaper/Defender_Exclusions-BOF",
-    "help": "Dump LSASS like you mean it.",
+    "help": "Determine Windows Defender exclusions.",
     "depends_on": "coff-loader",
     "entrypoint": "go",
     "files": [
