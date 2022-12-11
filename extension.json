@@ -1,0 +1,32 @@
+{
+    "name": "EnumerateDefender",
+    "version": "0.0.0",
+    "command_name": "enumeratedefender",
+    "extension_author": "EspressoCake",
+    "original_author": "EspressoCake",
+    "repo_url": "https://github.com/NightlyEscaper/Defender_Exclusions-BOF",
+    "help": "Dump LSASS like you mean it.",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "cEnumerateDefender.x64.o"
+        },
+        {
+            "os": "windows",
+            "arch": "386",
+            "path": "cEnumerateDefender.x86.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "type",
+            "desc": "Enum type:\n\t1: Folder exclusions\n\t2: Process exclusions\n\t3: Extension exclusions.",
+            "type": "int",
+            "optional": false
+        }
+    ]
+}
+
